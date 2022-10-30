@@ -1,0 +1,68 @@
+button {
+    font-size: 1.2rem;
+    border: 2px solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 0px 0px black;
+    display: block;
+    width: 100%;
+    text-align: left;
+    cursor: pointer
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+
+
+
+.card {
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: 400px;
+    width: 100%;
+}
+
+.card a:nth-of-type(1) button {
+    color: white;
+    background-color: var(--pink);
+}
+
+.card a:nth-of-type(2) button {
+    background-color: var(--yellow);
+}
+
+#rulesManual {
+    position: fixed;
+    top: 50vh;
+    transform: translateY(-50%);
+    height: max-content;
+    padding: 3rem 1rem;
+    margin-left: .75rem;
+    margin-right: .75rem;
+    border-radius: 1rem;
+    border: 3px solid black;
+    box-shadow: 0px 5px 0px 0px black;
+    background-color: deepskyblue;
+    color: white;
+    clear: both;
+    max-width: 600px;
+}
+
+#rulesManual button {
+    float: right;
+    width: max-content;
+    border: none;
+    box-shadow: unset;
+    padding: .5rem;
+    margin-left: .5rem;
+    background: hsla(0, 0%, 0%, .1);
+    color: red;
+}
+
+#rulesManual p {
+    font-size: 1.3rem;
+}

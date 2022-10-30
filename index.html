@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+
+    <article class="card">
+        <div class="icon">
+            <span></span><span></span><span></span><span></span>
+        </div>
+
+        <a href="#"><button id="play-cpu">Play vs CPU</button></a>
+        <a href="./game.html"><button id="play-player">Play vs Player</button></a>
+        <button id="rules">Game rules</button>
+    </article>
+
+    <article id="rulesManual" style="display:none">
+        <button id="btnCloseManual">X</button>
+        <p>Haverão dois jogadores. O objetivo do jogo é que um dos dois jogadores consigam ter quatro bolas em sequencia
+            de uma mesma cor, seja na horizontal ou verticam. Quem alcançar esse objetivo vence o jogo.</p>
+    </article>
+
+
+    <script>
+
+        const btnRules = document.getElementById('rules');
+        const popupRules = document.getElementById('rulesManual');
+        const btnCloseManual = document.getElementById('btnCloseManual')
+
+        btnRules.addEventListener("click", showManual);
+        btnCloseManual.addEventListener("click", closeManual)
+
+        function showManual() {
+            popupRules.style.display = 'block';
+        }
+
+        function closeManual() {
+            popupRules.style.display = 'none';
+        }
+
+
+    </script>
+
+</body>
+
+</html>
